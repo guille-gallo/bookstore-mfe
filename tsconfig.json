@@ -2,9 +2,9 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "outDir": "./dist"
   },
-  "files": ["src/guille-books-store.tsx"],
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"]
+  "exclude": ["node_modules", "dist", "src/**/*.test*"]
 }
