@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/bookstore-mfe.tsx',
+  entry: './src/guille-books-store.tsx', // Adjust this to your actual entry file
   output: {
-    filename: 'bookstore-mfe.js',
+    filename: 'bookstore-mfe.js', // The output file name
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'system',
   },
@@ -20,7 +20,11 @@ module.exports = {
         },
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/, // Add this rule to handle CSS files
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
-  externals: ['react', 'react-dom', 'single-spa', 'single-spa-react'],
+  externals: ['react', 'react-dom', 'single-spa-react'],
 };
