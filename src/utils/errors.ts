@@ -3,5 +3,6 @@ export enum ErrorCode {
 }
 
 export function failRandomly() {
-  return Math.random() > 0.7;
+  //return Math.random() > 0.7;
+  return false;
 }

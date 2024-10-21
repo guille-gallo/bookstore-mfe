@@ -132,9 +132,9 @@ const addBookToDB = async (book) => {
 export async function findBooks({ page = 1, perPage = 25 }: paginatedType = {}) {
   await debounce();
 
-  if (failRandomly()) {
+  /* if (failRandomly()) {
     return { error: { code: ErrorCode.SOMETHING_WENT_WRONG } };
-  }
+  } */
 
   const setData = (data) => {
     

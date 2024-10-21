@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  font-size: ${props => props.theme.fontSizes.md}px;
+  font-size: 16px;
   font-weight: 600;
 `;

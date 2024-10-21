@@ -38,6 +38,7 @@ export default function MainPage() {
           }, 1000);
       }
       if (data) {
+        console.log("useEffect setBooks...")
         setBooks(data);
       }
     })();
@@ -210,13 +211,13 @@ export default function MainPage() {
       }
       {!isNewBookOpen && !displayRestart &&
         <div className="scroll-label">
-          <span style={{position: 'absolute', left: '120px'}}>Scroll down to see more books!</span>
+          <span style={{position: 'absolute', left: '120px'}}>Scroll down to see more books!!</span>
         </div>
       }
       {displayRestart && 
         <>
           {errorCode && <p>Error code: {errorCode.code}</p>}
-          <p>Something went wrong. Application is restarting...</p>
+          <p>Something went wrong. Application is restarting....</p>
         </>
       }
     </div>
